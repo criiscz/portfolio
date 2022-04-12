@@ -1,4 +1,3 @@
-import '../../../CssModules/ColorSwitcher.module.css'
 import {Icon} from '@iconify/react'
 import {useEffect, useState} from "react";
 import useDarkMode from "../../../Hooks/useDarkMode";
@@ -52,7 +51,7 @@ export default function ColorSwitcher() {
   }
 
   return (
-    <div className="right-20 absolute flex gap-5 font-display">
+    <div className="right-40 absolute flex gap-5 font-display">
       <input type="checkbox" id="color-switcher"
              className={styles.NavBar.ColorSwitcher.checkbox}
              onChange={changeState}
