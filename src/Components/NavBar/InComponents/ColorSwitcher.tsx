@@ -1,11 +1,14 @@
 import '../../../CssModules/ColorSwitcher.module.css'
 import {Icon} from '@iconify/react'
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import useDarkMode from "../../../Hooks/useDarkMode";
 
 export default function ColorSwitcher() {
   const [isChecked, setIsChecked] = useState(false)
   const [colorTheme, setTheme] = useDarkMode()
+  useEffect(() => {
+    setIsChecked(colorTheme === 'light')
+  }, [colorTheme])
   const changeState = () => {
     setIsChecked(!isChecked)
     setTheme(colorTheme)
@@ -53,15 +56,15 @@ export default function ColorSwitcher() {
       <input type="checkbox" id="color-switcher"
              className={styles.NavBar.ColorSwitcher.checkbox}
              onChange={changeState}
-             checked={colorTheme==='light'}
+             checked={colorTheme === 'light'}
       />
 
       <label htmlFor="color-switcher" className="absolute z-10">
         {
           isChecked ?
+            <Icon icon={'bi:moon-fill'} className={styles.NavBar.ColorSwitcher.moon_icon}/> :
             <Icon icon={'bi:sun-fill'} className="cursor-pointer left-[0.35rem] top-1.5 h-3 w-3 text-white
-      absolute"/> :
-            <Icon icon={'bi:moon-fill'} className={styles.NavBar.ColorSwitcher.moon_icon}/>
+      absolute"/>
         }
 
       </label>
