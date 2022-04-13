@@ -1,0 +1,17 @@
+/**
+Styles adapted from: https://github.com/catalinmiron/react-typical
+ */
+
+@tailwind utilities;
+
+@layer utilities {
+    .typicalWrapper::after {
+        content: "▮";
+        animation: blink 1s infinite step-start;
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+}
+

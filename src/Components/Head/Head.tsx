@@ -1,4 +1,3 @@
-import './Head.css';
 import AnimationCriiscz from './InComponents/AnimationCriiscz';
 import AnimationSkills from "./InComponents/AnimationSkills";
 
@@ -9,11 +8,13 @@ export default function Header() {
   }
 
   return (
-    <div className={" head h-40"}>
-      <div className={styleText.principal}>{texts[0]}</div>
+    <div className={"w-full  head h-40"}>
+      <div className={styleText.principal + ' pb-2'}>{texts[0]}</div>
       <AnimationCriiscz />
-      <div className={styleText.principal}>{texts[1]}</div>
-      <AnimationSkills />
+      <div className={styleText.principal + ' text-lg p-2 font-semibold'}>{texts[1]}</div>
+      <div className="text-2xl text-center block w-full bg-[#00031d]">
+        <AnimationSkills/>
+      </div>
 
       <svg className=" z-0 animate-wave fill-[#00031d] translate-y-0 h-full w-full"
            viewBox="0 0 500 120" preserveAspectRatio="none">

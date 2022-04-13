@@ -1,5 +1,5 @@
 {
-  "homepage": "https://criiscz.github.io/portfolio",
+  "homepage": "https://criiscz.github.io/portfolio/",
   "name": "portfolio-npm",
   "version": "0.1.0",
   "private": true,
@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@camwiegert/typical": "^0.1.1",
     "@iconify/react": "^3.2.1",
     "@types/react-router-hash-link": "^2.4.5",
     "autoprefixer": "^10.4.4",

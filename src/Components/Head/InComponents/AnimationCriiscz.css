@@ -1,0 +1,183 @@
+@tailwind utilities;
+
+@layer utilities {
+    .text-shadow-white {
+        text-shadow: 0 0 20px #ffff;
+    }
+}
+
+@layer animation-criiscz {
+    .text {
+        font-weight: normal;
+        text-transform: capitalize;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: #0bf;
+        text-shadow: 0 0 20px #0bf;
+
+    }
+
+    .text__inner{
+        background: inherit;
+        position: relative;
+        width: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active{
+        color: #0bf;
+        text-shadow: 0 0 20px #0bf;
+        display: inline-block;
+        background: inherit;
+        position:absolute;
+        transform: translateY(-.7rem);
+    }
+
+    .active:first-child{
+        left: calc(100%/2 - 3.1rem - 4.8rem);
+        animation: cri-move 4s ease-in-out ;
+        transform: translateY(-.7rem);
+        top: -1.8rem;
+
+
+    }
+    .active:nth-child(2){
+        left: calc(100%/2 - 2rem - 4.8rem);
+        animation: cri-move 4s ease-in-out ;
+        transform: translateY(-.7rem);
+        top: -1.8rem;
+
+
+
+    }
+    .active:nth-child(3){
+        left: calc(100%/2 - 1rem - 4.8rem);
+        animation: cri-move 4s ease-in-out ;
+        transform: translateY(-.7rem);
+        top: -1.8rem;
+
+
+
+    }
+    .active:nth-child(4){
+        left: calc(100%/2 - .5rem - 3.2rem);
+        animation: first_i-move 4s ease-in-out ;
+        transform: translateY(-.7rem);
+        top: -1.8rem;
+
+
+    }
+    .active:nth-child(5){
+        left: calc(100%/2 + 0rem);
+        transform: translateY(-.7rem);
+
+
+    }
+    .active:nth-child(6){
+        left: calc(100%/2 + .9rem + 2.2rem);
+        animation: c-move 4s ease-in-out ;
+        transform: translateY(-.7rem);
+        top: -1.8rem;
+
+
+    }
+    .active:nth-child(7){
+        left: calc(100%/2 + 2rem + 4.1rem);
+        top: -1.8rem;
+        animation: z-move 4s ease-in-out ;
+    }
+
+    .active:nth-child(3):after{
+        color: #fff;
+        text-shadow: 0 0 20px #fff;
+        content: "ST";
+        width: 100%;
+        position: absolute;
+        animation: fade-in 4s ease-in-out ;
+
+    }
+
+    .active:nth-child(4):after{
+        color: #fff;
+        text-shadow: 0 0 20px #fff;
+
+        content: "AN";
+        width: 100%;
+        position: absolute;
+        animation: fade-in 4s ease-in-out ;
+
+
+    }
+    .active:nth-child(5):after{
+        color: #fff;
+        text-shadow: 0 0 20px #fff;
+
+        content: "ÁN";
+        width: 100%;
+        position: absolute;
+        animation: fade-in 4s ease-in-out ;
+
+
+    }
+    .active:nth-child(6):after{
+        color: #fff;
+        text-shadow: 0 0 20px #fff;
+        content: "HE";
+        width: 100%;
+        position: absolute;
+        animation: fade-in 4s ease-in-out ;
+
+    }
+
+    @keyframes cri-move {
+        from {
+            transform: translateX(5.1rem);
+        }
+        to {
+            transform: translateX(-.4rem);
+        }
+    }
+    @keyframes first_i-move{
+        from {
+            transform: translateX(3.35rem);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes c-move {
+        from {
+            transform: translateX(-2.2rem);
+        }
+        to {
+            transform: translateX(.5rem);
+        }
+
+    }
+
+    @keyframes z-move {
+        from {
+            transform: translateX(-4.1rem);
+        }
+        to {
+            transform: translateX(1rem);
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+
+    }
+}
+@layer animation-skills{
+
+}

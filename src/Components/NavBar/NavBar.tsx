@@ -6,7 +6,7 @@ import LanguageSelector from "./InComponents/LanguageSelector";
 
 export default function NavBar() {
   return (
-    <div className="bg-[#00031d] p-5 flex w-full h-16 ">
+    <div className="bg-[#00031d] p-5 flex w-full h-24">
       <Logo/>
       <Links>
         <LinkTo to="about">Acerca</LinkTo>

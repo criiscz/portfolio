@@ -1,0 +1,7 @@
+@tailwind utilities;
+
+@layer utilities {
+    .text-shadow-blue-light{
+        text-shadow: 0 0 10px #00bfff;
+    }
+}
