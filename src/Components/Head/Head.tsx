@@ -1,5 +1,5 @@
-import AnimationCriiscz from './InComponents/AnimationCriiscz';
-import AnimationSkills from "./InComponents/AnimationSkills";
+import AnimationCriiscz from './InComponents/AnimationCriiscz/AnimationCriiscz';
+import AnimationSkills from "./InComponents/AnimationSkills/AnimationSkills";
 
 export default function Header() {
   const texts = ['Mi nombre es', 'soy']

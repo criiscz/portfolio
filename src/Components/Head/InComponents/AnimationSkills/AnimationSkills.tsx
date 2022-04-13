@@ -1,4 +1,4 @@
-import Typical from "../../CustomComponents/ReactTypical";
+import Typical from "../../../CustomComponents/ReactTypical";
 import './AnimationSkills.css'
 
 export default function AnimationSkills() {
