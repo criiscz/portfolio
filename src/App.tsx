@@ -1,15 +1,17 @@
 import React from 'react';
 import NavBar from "./Components/NavBar/NavBar";
-import {BrowserRouter as Router} from "react-router-dom";
+import Header from './Components/Head/Head';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <div className="App h-screen dark:bg-[#000108]">
-        <NavBar/>
-      </div>
-    </Router>
+    <div className="App h-screen dark:bg-[#000108]">
+      <NavBar/>
+      <Header/>
+      {/*<Footer/>*/}
+
+    </div>
+
+
   );
 }
 
-export default App;
