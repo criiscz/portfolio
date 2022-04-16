@@ -2,7 +2,7 @@
 
 @layer utilities {
     .text-shadow-white {
-        text-shadow: 0 0 20px #ffff;
+        text-shadow: 0 0 3px #ffff;
     }
 }
 
@@ -14,7 +14,7 @@
         justify-content: center;
         align-items: center;
         color: #0bf;
-        text-shadow: 0 0 20px #0bf;
+        text-shadow: 0 0 3px #0bf;
 
     }
 
@@ -29,7 +29,7 @@
 
     .active{
         color: #0bf;
-        text-shadow: 0 0 20px #0bf;
+        text-shadow: 0 0 3px #0bf;
         display: inline-block;
         background: inherit;
         position:absolute;

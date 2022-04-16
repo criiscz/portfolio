@@ -2,6 +2,6 @@
 
 @layer utilities {
     .text-shadow-blue-light{
-        text-shadow: 0 0 10px #00bfff;
+        text-shadow: 0 0 2px #00bfff;
     }
 }
